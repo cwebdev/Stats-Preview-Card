@@ -5,114 +5,95 @@
 body
 {    
     font-family: 'Overpass', sans-serif;        
-    background-color: hsl(0, 0%, 98%);    
+    background-color: #000;    
 }
 
 
-.TitleSection
+.MainBodyContent
 {
-    width: 80%;
-    margin: auto;
-    margin-top: 50px;
-}
-.Title1
-{
-    font-size: 26px;
-}
-
-.Title2
-{
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.TitleDetails
-{
-    margin-top: 20px;
-    color: hsl(229, 6%, 66%);
-    font-size: 19px;
-}
-
-.MainContentWrapper
-{    
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    flex-direction: column;   
+    width: 327px;
     margin: auto;
-    margin-top: 30px;
-}
-
-.Card
-{
-    margin-top: 30px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
     border-radius: 15px;
-    background-color: white;
-    -webkit-box-shadow: 1px 11px 18px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 11px 18px -6px rgba(0,0,0,0.75);
-    box-shadow: 1px 11px 18px -6px rgba(0,0,0,0.75);    
 }
 
-.CardContentWrapper
+.HeroImage
+{
+    height: 240px;
+}
+
+.MobileImage
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.DesktopImage
+{
+    display: none;
+}
+
+.BodyDetails
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: hsl(244, 38%, 16%);
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;    
+}
+
+.BodyContentWrapper
 {
     width: 80%;
     margin: auto;
-    height: 200px;
+    margin-top: 30px;    
 }
 
-.Card .Title
+.Title
 {
-    font-size: 20px;    
+    font-size: 30px;
+    color: white
 }
 
-.Card .CardDetails
+.HighLightTitle
 {
-    color: hsl(229, 6%, 66%);
+    color: hsl(277, 64%, 61%);
+}
+
+.ContentDetails
+{
+    color:hsla(0, 0%, 100%, 0.75);
     margin-top: 10px;
+    font-size: 15px;
+    line-height: 22px;
 }
 
-.Card .IconWrapper
+.StatsWrapper
 {
-    height: 175px;
-    display: flex;
-    align-items: center;
+    color: white;
+    margin-top: 20px;
 }
 
-.Card .Icon
-{
-    height: 64px;    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;    
-    width: 100%;
-}
-
-.SupervisorCard
-{      
-    border-top: 4px solid hsl(180, 62%, 55%); 
-}
-
-.TeamBuilderCard
-{   
-    border-top: 4px solid hsl(0, 78%, 62%); 
-}
-
-.KarmaCard
-{   
-    border-top: 4px solid hsl(34, 97%, 64%); 
-}
-
-.CalculatorCard
+.StatsElem
 {    
-    border-top: 4px solid hsl(212, 86%, 64%); 
+    height: 90px;
 }
 
+.StatsElem .Numbers
+{
+    font-size: 30px;
+}
 
-
-
-
+.StatsElem .Units
+{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 13px;
+}
 
 .row::after {
     content: "";
@@ -146,63 +127,10 @@ body
         float: left;        
       }
 
-    .TitleSection
-    {
-        text-align: center;
-        width: 30%;
-    }
-
-    .Title1 {
-        font-size: 32px;
-    }
-
-    .Title2 {
-        font-size: 32px;
-        font-weight: bold;
-    }
-
-    .MainContentWrapper
-    {
-        position: relative;
-        display: block;
-        height: 600px;
-        width: 1000px;        
-    }
-
-    .Card
-    {
-        height: 300px;
-        width: 300px;
-        margin: 0;
-        position: absolute;        
-    }
-
-    .SupervisorCard
-    {      
-        left:0px;
-        top:150px;
-    }
-
-    .TeamBuilderCard
-    {   
-        top: 0px;
-        left: 350px;
-    }
-
-    .KarmaCard
-    {   
-        left: 350px;
-        top: 350px;
-    }
-
-    .CalculatorCard
-    {    
-        right: 0px;
-        top: 150px;
-    }
-
-
-
+      .MobileImage
+      {
+        display: none;   
+      }
 }
   
 @media only screen and (min-width: 1000px)
