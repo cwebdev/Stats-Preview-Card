@@ -141,10 +141,57 @@ body
         float: left;        
       }
 
-      .MobileImage
-      {
+    .MainBodyContent
+    {
+        height: 446px;
+        width: 1000px;
+        flex-direction: row-reverse;  
+        margin-top: 200px;      
+    }
+
+    .MobileImage
+    {
         display: none;   
-      }
+    }
+
+    .DesktopImage
+    {
+        display: block;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .ImageOverlay
+    {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        height: 446px;
+        width: 540px;
+    }
+
+    .BodyDetails
+    {
+        width: 460px;
+    }
+
+    .BodyContentWrapper
+    {
+        width: 70%;
+        text-align: left;
+        margin-top: 75px;
+    }
+
+    .StatsWrapper
+    {
+        display: flex;
+        margin-top: 80px;
+    }
+
+    .StatsElem
+    {
+        width: 33%;
+    }
 }
   
 @media only screen and (min-width: 1000px)
