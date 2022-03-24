@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body
+{    
+    font-family: 'Overpass', sans-serif;        
+    background-color: hsl(0, 0%, 98%);    
+}
+
+
+.TitleSection
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.Title1
+{
+    font-size: 26px;
+}
+
+.Title2
+{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.TitleDetails
+{
+    margin-top: 20px;
+    color: hsl(229, 6%, 66%);
+    font-size: 19px;
+}
+
+.MainContentWrapper
+{    
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.Card
+{
+    margin-top: 30px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+    -webkit-box-shadow: 1px 11px 18px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 11px 18px -6px rgba(0,0,0,0.75);
+    box-shadow: 1px 11px 18px -6px rgba(0,0,0,0.75);    
+}
+
+.CardContentWrapper
+{
+    width: 80%;
+    margin: auto;
+    height: 200px;
+}
+
+.Card .Title
+{
+    font-size: 20px;    
+}
+
+.Card .CardDetails
+{
+    color: hsl(229, 6%, 66%);
+    margin-top: 10px;
+}
+
+.Card .IconWrapper
+{
+    height: 175px;
+    display: flex;
+    align-items: center;
+}
+
+.Card .Icon
+{
+    height: 64px;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;    
+    width: 100%;
+}
+
+.SupervisorCard
+{      
+    border-top: 4px solid hsl(180, 62%, 55%); 
+}
+
+.TeamBuilderCard
+{   
+    border-top: 4px solid hsl(0, 78%, 62%); 
+}
+
+.KarmaCard
+{   
+    border-top: 4px solid hsl(34, 97%, 64%); 
+}
+
+.CalculatorCard
+{    
+    border-top: 4px solid hsl(212, 86%, 64%); 
+}
+
+
+
+
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* For mobile phones: */
+[class*="col-"]
+{
+    width: 100%;
+}  
+
+@media only screen and (min-width: 600px)
+{
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}  
+    
+    [class*="col-"] {
+        float: left;        
+      }
+
+    .TitleSection
+    {
+        text-align: center;
+        width: 30%;
+    }
+
+    .Title1 {
+        font-size: 32px;
+    }
+
+    .Title2 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .MainContentWrapper
+    {
+        position: relative;
+        display: block;
+        height: 600px;
+        width: 1000px;        
+    }
+
+    .Card
+    {
+        height: 300px;
+        width: 300px;
+        margin: 0;
+        position: absolute;        
+    }
+
+    .SupervisorCard
+    {      
+        left:0px;
+        top:150px;
+    }
+
+    .TeamBuilderCard
+    {   
+        top: 0px;
+        left: 350px;
+    }
+
+    .KarmaCard
+    {   
+        left: 350px;
+        top: 350px;
+    }
+
+    .CalculatorCard
+    {    
+        right: 0px;
+        top: 150px;
+    }
+
+
+
+}
+  
+@media only screen and (min-width: 1000px)
+{
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
