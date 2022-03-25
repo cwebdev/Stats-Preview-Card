@@ -173,6 +173,8 @@ body
     .BodyDetails
     {
         width: 460px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 15px;
     }
 
     .BodyContentWrapper
