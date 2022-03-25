@@ -2,7 +2,7 @@
 
 This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62).
 
-Live Site Link: https://cwebdev.github.io/Pricing-Grid-Page/
+Live Site Link: https://cwebdev.github.io/Stats-Preview-Card/
 
 ## Table of contents
 
